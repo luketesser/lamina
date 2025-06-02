@@ -1,0 +1,270 @@
+---
+main_topsize: 0.2 #percent coverage of the poster
+main_bottomsize: 0.1
+primary_colour: "#01304E"
+secondary_colour: "#00B0F0"
+accent_colour: "#494a49"
+body_textsize: "65px"
+
+#ESSENTIALS
+title: '**Reta Alocação FIC FIM**'
+# author:
+#   - name: '**Gestão: Reta Asset Ltda**'
+#     affil: 1
+#     main: true
+#     orcid: '0000-0002-1099-3857'
+#     twitter: brentthorne18
+#     email: 'retaasset@com'
+#   - name: Another G. Contributor
+#     affil: 2
+#     main: true
+#     email: 'ag.con@posterdown.net'
+#   - name: Person Three
+#     affil: 3
+#   - name: Person Four
+#     affil: 2
+#   - name: Person Five
+#     affil: 3
+#   - name: Person Six
+#     affil: 3
+#   - name: A. Seventh Author
+#     affil: 2
+# affiliation:
+#   - num: 1
+#     address: Department of Earth Science, Brock University
+#   - num: 2
+#     address: Department of Graphics and Layouts, University of Posters; Canada
+#   - num: 3
+#     address: Another Institute of a place where work gets done, Earth, Milky Way
+main_findings:  "![](reta_files/figure-html/logo-branco.png){width=100% height=auto}"
+   # - "Reta **Alocação** Fundo de Investimentos **em cotas** **Multimercado**"
+logoleft_name: reta_files/figure-html/logo-branco.png
+logoright_name: reta_files/figure-html/logo-preto.png
+logocenter_name: reta_files/figure-html/logo-anbima-color.jpg
+output: 
+  posterdown::posterdown_betterport:
+    self_contained: false
+    pandoc_args: --mathjax
+    number_sections: false
+bibliography: packages.bib
+link-citations: true
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      tidy = FALSE,
+                      message = FALSE,
+                      fig.align = 'center',
+                      out.width = "100%")
+options(knitr.table.format = "html") 
+```
+# Prestadores de Serviço Essenciais
+
+<style>
+  /* Force the table and its rows and cells to have a transparent background */
+  table.custom-table,
+  table.custom-table tr,
+  table.custom-table td {
+    background-color: transparent !important;
+  }
+  /* Ensure borders are removed and the table is aligned to the left */
+  table.custom-table {
+    border-collapse: collapse;
+    margin-left: 0;
+  }
+  table.custom-table td {
+    border: none;
+    padding: 4px 8px;
+  }
+</style>
+
+<table class="custom-table">
+  <tr>
+    <td style="vertical-align: top;">&#8226;</td>
+    <td style="color: black; text-align: right; width:150px;">Gestor</td>
+    <td style="padding: 0 8px;">:</td>
+    <td style="color: #00B0F0; font-weight: bold;">Reta Asset Ltda</td>
+  </tr>
+  <tr>
+    <td style="vertical-align: top;">&#8226;</td>
+    <td style="color: black; text-align: right; width:150px;">Administrador</td>
+    <td style="padding: 0 8px;">:</td>
+    <td style="color: #494a49; font-weight: bold;">XP</td>
+  </tr>
+  <tr>
+    <td style="vertical-align: top;">&#8226;</td>
+    <td style="color: black; text-align: right; width:150px;">Custódia</td>
+    <td style="padding: 0 8px;">:</td>
+    <td style="color: red; font-weight: bold;">Santander</td>
+  </tr>
+  <tr>
+    <td style="vertical-align: top;">&#8226;</td>
+    <td style="color: black; text-align: right; width:150px;">Auditoria</td>
+    <td style="padding: 0 8px;">:</td>
+    <td style="color: orange; font-weight: bold;">EY</td>
+  </tr>
+</table>
+
+# Características
+
+<!-- This is the `posterdown_betterport` template for the {posterdown} package! I was inspired by the twitter thread of [Mike Morrison](https://mobile.twitter.com/mikemorrison/status/1110191245035479041) and wanted to apply the `#betterposter` concept to the reproducible (yet simple to use) functionality of the {posterdown} package [@R-posterdown]. If you're not an R user don't sweat as you do **NOT** need to use it at all! Feel free to use only the Markdown functionality of this package :) -->
+
+
+<style>
+  /* Force the table and its rows and cells to have a transparent background */
+  table.custom-table,
+  table.custom-table tr,
+  table.custom-table td {
+    background-color: transparent !important;
+  }
+  /* Ensure borders are removed and the table is aligned to the left */
+  table.custom-table {
+    border-collapse: collapse;
+    margin-left: 0;
+  }
+  table.custom-table td {
+    border: none;
+    padding: 4px 8px;
+  }
+</style>
+
+<table class="custom-table">
+  <tr>
+    <td style="vertical-align: top;">&#8226;</td>
+    <td style="color: black; text-align: right; width:150px;">Taxa de Administração</td> 
+    <td style="padding: 0 8px;">:</td>
+    <td style="color: black; font-weight: bold;">0,877%</td>
+  </tr>
+  <tr>
+    <td style="vertical-align: top;">&#8226;</td>
+    <td style="color: black; text-align: right; width:150px;">Gestora</td>
+    <td style="padding: 0 8px;">:</td>
+    <td style="color: black; font-weight: bold;">0,59%</td>
+  </tr>
+  <tr>
+    <td style="vertical-align: top;">&#8226;</td>
+    <td style="color: black; text-align: right; width:150px;">Administrador</td>
+    <td style="padding: 0 8px;">:</td>
+    <td style="color: black; font-weight: bold;">0,14%</td>
+  </tr>
+  <tr>
+    <td style="vertical-align: top;">&#8226;</td>
+    <td style="color: black; text-align: right; width:150px;">Auditor</td>
+    <td style="padding: 0 8px;">:</td>
+    <td style="color: black; font-weight: bold;">0,023%</td>
+  </tr>
+    <tr>
+    <td style="vertical-align: top;">&#8226;</td>
+    <td style="color: black; text-align: right; width:150px;">Aplicação Mínima:</td>
+    <td style="padding: 0 8px;">:</td>
+    <td style="color: black; font-weight: bold;">R$ 100,00</td>
+  </tr>
+    <tr>
+    <td style="vertical-align: top;">&#8226;</td>
+    <td style="color: black; text-align: right; width:150px;">Cotização Aplicação</td>
+    <td style="padding: 0 8px;">:</td>
+    <td style="color: black; font-weight: bold;">D+1</td>
+  </tr>
+  <tr>
+    <td style="vertical-align: top;">&#8226;</td>
+    <td style="color: black; text-align: right; width:150px;">Cotização Resgate</td>
+    <td style="padding: 0 8px;">:</td>
+    <td style="color: black; font-weight: bold;">D+35</td>
+  </tr>
+   <tr>
+    <td style="vertical-align: top;">&#8226;</td>
+    <td style="color: black; text-align: right; width:150px;">Liquidação Resgate</td>
+    <td style="padding: 0 8px;">:</td>
+    <td style="color: black; font-weight: bold;">D+37</td>
+  </tr>
+    <tr>
+    <td style="vertical-align: top;">&#8226;</td>
+    <td style="color: black; text-align: right; width:150px;">Público Alvo</td>
+    <td style="padding: 0 8px;">:</td>
+    <td style="color: black; font-weight: bold;">Investidor em Geral</td>
+  </tr>
+</table>
+
+
+```{r, include=FALSE}
+knitr::write_bib(c('posterdown', 'rmarkdown','pagedown'), 'packages.bib')
+```
+
+# Objetivo
+
+O objetivo é bater o CDI diversificando riscos de forma eficiente. Mantemos
+um modelo de gestão agnóstico que nos permite acessar o mercado nacional e
+internacional através dos melhores produtos disponíveis, com um nível de volatilidade
+controlada (entre 2% e 5%) e ancorada nas taxas reais de juros da economia.
+
+<!-- **_Now on to the results!_** -->
+
+# Histórico
+
+```{r Retornos, message=FALSE, warning=FALSE}
+
+readxl::read_excel("reta_aloc_files/cota-aloc.xlsx") |> 
+  dplyr::mutate(Data = zoo::as.Date(Data)) |> 
+  dplyr::rename(CDI = cdi_acum, `Reta Alocação` = cota_acum) |> 
+  tidyr::pivot_longer(cols = c(4,7), names_to = "Series", values_to = "Value") |> 
+  ggplot2::ggplot(ggplot2::aes(x = Data, y = Value, color = Series)) +
+  ggplot2::geom_line(size = 1.2) +
+  ggplot2::labs(
+    x = NULL,
+    y = NULL,
+    title = "Resultados",
+    color = "Legenda"
+  ) +
+  ggplot2::scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
+  ggplot2::theme_minimal()
+
+```
+
+```{r Risco, message=FALSE, warning=FALSE}
+readxl::read_excel("reta_aloc_files/cota-aloc.xlsx") |> 
+  dplyr::mutate(Data = zoo::as.Date(Data)) |>
+  dplyr::mutate(log_returns = log(Cota / dplyr::lag(Cota))) |> 
+  tidyr::drop_na() |> 
+  dplyr::mutate(vol = 100*zoo::rollapply(log_returns, 21, stats::sd, fill = NA, align = "right")*252^(1/2)) |> 
+  dplyr::mutate(var = 100*zoo::rollapply(log_returns, 21, stats::quantile, probs = .05, fill = NA, align = "right")*21^(1/2)) |> 
+  dplyr::mutate(cvar = 100*zoo::rollapply(log_returns, 21, function(x) mean(x[x < quantile(x, 0.01)]), fill = NA, align = "right")*21^(1/2)) |> 
+  ggplot2::ggplot(ggplot2::aes(x = Data)) +
+  ggplot2::geom_line(ggplot2::aes(y = vol, color = "Volatilidade"), size = 1) +
+  ggplot2::geom_line(ggplot2::aes(y = var, color = "VaR (95%)"), size = 1) +
+  ggplot2::geom_line(ggplot2::aes(y = cvar, color = "CVaR (99%)"), size = 1) +
+  ggplot2::scale_y_continuous(name = "Volatilidade (%)", labels = scales::percent_format(scale = 1),
+                     sec.axis = ggplot2::sec_axis(~., name = "VaR & CVaR Mensal (%)", labels = scales::percent_format(scale = 1))) +
+  ggplot2::scale_color_manual(values = c("Volatilidade" = "blue", "VaR (95%)" = "red", "CVaR (99%)" = "purple")) +
+  ggplot2::labs(x = NULL, y = NULL, title = "Risco", color = "Legenda") +
+  ggplot2::theme_minimal()
+```
+
+Maybe you want to show off some of that fancy code you spent so much time on to make that figure, well you can do that too! Just use the `echo=TRUE` option in the r code chunk options, Figure \@ref(fig:myprettycode)!
+
+```{r myprettycode, echo=TRUE, fig.cap='Boxplots, so hot right now!', fig.height=6, out.width="80%"}
+#trim whitespace
+par(mar=c(2,2,0,0))
+#plot boxplots
+boxplot(iris$Sepal.Width~iris$Species,
+        col = "#008080", 
+        border = "#0b4545",
+        ylab = "Sepal Width (cm)",
+        xlab = "Species")
+```
+
+How about a neat table of data? See, Table \@ref(tab:iristable):
+
+```{r, iristable}
+knitr::kable(
+  iris[1:15,1:5], format = "html",
+  caption = "A table made with the **knitr::kable** function.",
+  align = "c", col.names = c("Sepal <br> Length",
+                             "Sepal <br> Width",
+                             "Petal <br> Length",
+                             "Petal <br> Width",
+                             "Species"),
+  escape = FALSE)
+```
+
+# References
