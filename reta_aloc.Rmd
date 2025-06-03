@@ -4,7 +4,7 @@ main_bottomsize: 0.1
 primary_colour: "#01304E"
 secondary_colour: "#00B0F0"
 accent_colour: "#494a49"
-body_textsize: "65px"
+body_textsize: "76px"
 
 #ESSENTIALS
 title: '**Reta Alocação FIC FIM**'
@@ -39,13 +39,14 @@ title: '**Reta Alocação FIC FIM**'
 main_findings:  "![](reta_files/figure-html/logo-branco.png){width=100% height=auto}"
    # - "Reta **Alocação** Fundo de Investimentos **em cotas** **Multimercado**"
 logoleft_name: reta_files/figure-html/logo-branco.png
-logoright_name: reta_files/figure-html/logo-preto.png
+logoright_name: reta_files/figure-html/logo-branco.png
 logocenter_name: reta_files/figure-html/logo-anbima-color.jpg
 output: 
   posterdown::posterdown_betterport:
     self_contained: false
     pandoc_args: --mathjax
     number_sections: false
+    
 bibliography: packages.bib
 link-citations: true
 ---
@@ -59,6 +60,7 @@ knitr::opts_chunk$set(echo = FALSE,
                       out.width = "100%")
 options(knitr.table.format = "html") 
 ```
+
 # Prestadores de Serviço Essenciais
 
 <style>
@@ -132,6 +134,27 @@ options(knitr.table.format = "html")
 <table class="custom-table">
   <tr>
     <td style="vertical-align: top;">&#8226;</td>
+    <td style="color: black; text-align: right; width:150px;">CNPJ</td> 
+    <td style="padding: 0 8px;">:</td>
+    <td style="color: black;font-weight: bold;">54.236.091/0001-98</td>
+  </tr>
+  
+  <tr>
+    <td style="vertical-align: top;">&#8226;</td>
+    <td style="color: black; text-align: right; width:150px;">Categoria Anbima</td> 
+    <td style="padding: 0 8px;">:</td>
+    <td style="color: black;font-weight: bold;">Multimercados</td>
+  </tr>
+  
+  <tr>
+    <td style="vertical-align: top;">&#8226;</td>
+    <td style="color: black; text-align: right; width:150px;">Tributação</td> 
+    <td style="padding: 0 8px;">:</td>
+    <td style="color: black;font-weight: bold;">Longo Prazo</td>
+  </tr>
+
+  <tr>
+    <td style="vertical-align: top;">&#8226;</td>
     <td style="color: black; text-align: right; width:150px;">Taxa de Administração</td> 
     <td style="padding: 0 8px;">:</td>
     <td style="color: black; font-weight: bold;">0,877%</td>
@@ -182,7 +205,7 @@ options(knitr.table.format = "html")
     <td style="vertical-align: top;">&#8226;</td>
     <td style="color: black; text-align: right; width:150px;">Público Alvo</td>
     <td style="padding: 0 8px;">:</td>
-    <td style="color: black; font-weight: bold;">Investidor em Geral</td>
+    <td style="color: black; font-weight: bold;">Público Geral</td>
   </tr>
 </table>
 
@@ -190,6 +213,7 @@ options(knitr.table.format = "html")
 ```{r, include=FALSE}
 knitr::write_bib(c('posterdown', 'rmarkdown','pagedown'), 'packages.bib')
 ```
+
 
 # Objetivo
 
@@ -240,31 +264,43 @@ readxl::read_excel("reta_aloc_files/cota-aloc.xlsx") |>
   ggplot2::theme_minimal()
 ```
 
-Maybe you want to show off some of that fancy code you spent so much time on to make that figure, well you can do that too! Just use the `echo=TRUE` option in the r code chunk options, Figure \@ref(fig:myprettycode)!
 
-```{r myprettycode, echo=TRUE, fig.cap='Boxplots, so hot right now!', fig.height=6, out.width="80%"}
-#trim whitespace
-par(mar=c(2,2,0,0))
-#plot boxplots
-boxplot(iris$Sepal.Width~iris$Species,
-        col = "#008080", 
-        border = "#0b4545",
-        ylab = "Sepal Width (cm)",
-        xlab = "Species")
-```
 
-How about a neat table of data? See, Table \@ref(tab:iristable):
 
-```{r, iristable}
+```{r, monthly_returns}
+
+monthly_returns <- readxl::read_excel("reta_aloc_files/cota-aloc.xlsx") |> 
+  dplyr::mutate(Data = zoo::as.Date(Data)) |> 
+  dplyr::group_by(month = format(Data, "%Y-%m")) |> 
+  dplyr::summarise(
+    r_cota  = (prod(delta_cota) - 1)*100,
+    r_cdi   = (prod(`1+cdi`) - 1)*100,
+    ratio   = (r_cota/r_cdi)*100,
+    inicial = (dplyr::last(cota_acum) / dplyr::last(cdi_acum))*100,
+    pl      = dplyr::last(PL)
+    ) |> 
+  dplyr::filter(month >= "2024-05") |> 
+  dplyr::mutate(r_cota = sprintf("%.2f%%", r_cota),
+                r_cdi  = sprintf("%.2f%%", r_cdi),
+                ratio  = sprintf("%.2f%%", ratio),
+                inicial= sprintf("%.2f%%", inicial),
+                pl     = formatC(pl, format = "f", digits = 2, big.mark = ".", , decimal.mark = ",")
+  )
+
 knitr::kable(
-  iris[1:15,1:5], format = "html",
-  caption = "A table made with the **knitr::kable** function.",
-  align = "c", col.names = c("Sepal <br> Length",
-                             "Sepal <br> Width",
-                             "Petal <br> Length",
-                             "Petal <br> Width",
-                             "Species"),
-  escape = FALSE)
+  monthly_returns, format = "html",
+  # caption = "",
+  align = "c", col.names = c("Mês",
+                             "Fundo",
+                             "CDI",
+                             "% CDI",
+                             "Inicial",
+                             "PL"),
+  escape = FALSE) |> 
+  kableExtra::kable_styling(font_size = 90)
 ```
 
-# References
+# Disclaimer
+
+Rentabilidade passada não representa garantia de resultados futuros.
+
