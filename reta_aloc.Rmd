@@ -6,6 +6,7 @@ secondary_colour: "#00B0F0"
 accent_colour: "#494a49"
 body_textsize: "76px"
 
+# https://www.shilaan.com/post/academic-conference-posters-using-posterdown/
 #ESSENTIALS
 title: '**Reta Alocação FIC FIM**'
 # author:
@@ -83,25 +84,25 @@ options(knitr.table.format = "html")
 
 <table class="custom-table">
   <tr>
-    <td style="vertical-align: top;">&#8226;</td>
+    <td style="vertical-align: top;"></td>
     <td style="color: black; text-align: right; width:150px;">Gestor</td>
     <td style="padding: 0 8px;">:</td>
     <td style="color: #00B0F0; font-weight: bold;">Reta Asset Ltda</td>
   </tr>
   <tr>
-    <td style="vertical-align: top;">&#8226;</td>
+    <td style="vertical-align: top;"></td>
     <td style="color: black; text-align: right; width:150px;">Administrador</td>
     <td style="padding: 0 8px;">:</td>
     <td style="color: #494a49; font-weight: bold;">XP</td>
   </tr>
   <tr>
-    <td style="vertical-align: top;">&#8226;</td>
+    <td style="vertical-align: top;"></td>
     <td style="color: black; text-align: right; width:150px;">Custódia</td>
     <td style="padding: 0 8px;">:</td>
     <td style="color: red; font-weight: bold;">Santander</td>
   </tr>
   <tr>
-    <td style="vertical-align: top;">&#8226;</td>
+    <td style="vertical-align: top;"></td>
     <td style="color: black; text-align: right; width:150px;">Auditoria</td>
     <td style="padding: 0 8px;">:</td>
     <td style="color: orange; font-weight: bold;">EY</td>
@@ -133,76 +134,76 @@ options(knitr.table.format = "html")
 
 <table class="custom-table">
   <tr>
-    <td style="vertical-align: top;">&#8226;</td>
+    <td style="vertical-align: top;"></td>   <!-- &#8226 is the code for bullet points in html. To include bullet point this line should be like this: <td style="vertical-align: top;">&#8226;</td> -->
     <td style="color: black; text-align: right; width:150px;">CNPJ</td> 
     <td style="padding: 0 8px;">:</td>
     <td style="color: black;font-weight: bold;">54.236.091/0001-98</td>
   </tr>
   
   <tr>
-    <td style="vertical-align: top;">&#8226;</td>
+    <td style="vertical-align: top;"></td>
     <td style="color: black; text-align: right; width:150px;">Categoria Anbima</td> 
     <td style="padding: 0 8px;">:</td>
     <td style="color: black;font-weight: bold;">Multimercados</td>
   </tr>
   
   <tr>
-    <td style="vertical-align: top;">&#8226;</td>
+    <td style="vertical-align: top;"></td>
     <td style="color: black; text-align: right; width:150px;">Tributação</td> 
     <td style="padding: 0 8px;">:</td>
     <td style="color: black;font-weight: bold;">Longo Prazo</td>
   </tr>
 
   <tr>
-    <td style="vertical-align: top;">&#8226;</td>
+    <td style="vertical-align: top;"></td>
     <td style="color: black; text-align: right; width:150px;">Taxa de Administração</td> 
     <td style="padding: 0 8px;">:</td>
     <td style="color: black; font-weight: bold;">0,877%</td>
   </tr>
   <tr>
-    <td style="vertical-align: top;">&#8226;</td>
+    <td style="vertical-align: top;"></td>
     <td style="color: black; text-align: right; width:150px;">Gestora</td>
     <td style="padding: 0 8px;">:</td>
     <td style="color: black; font-weight: bold;">0,59%</td>
   </tr>
   <tr>
-    <td style="vertical-align: top;">&#8226;</td>
+    <td style="vertical-align: top;"></td>
     <td style="color: black; text-align: right; width:150px;">Administrador</td>
     <td style="padding: 0 8px;">:</td>
     <td style="color: black; font-weight: bold;">0,14%</td>
   </tr>
   <tr>
-    <td style="vertical-align: top;">&#8226;</td>
-    <td style="color: black; text-align: right; width:150px;">Auditor</td>
+    <td style="vertical-align: top;"></td>
+    <td style="color: black; text-align: right; width:150px;">Custódia</td>
     <td style="padding: 0 8px;">:</td>
     <td style="color: black; font-weight: bold;">0,023%</td>
   </tr>
     <tr>
-    <td style="vertical-align: top;">&#8226;</td>
+    <td style="vertical-align: top;"></td>
     <td style="color: black; text-align: right; width:150px;">Aplicação Mínima:</td>
     <td style="padding: 0 8px;">:</td>
     <td style="color: black; font-weight: bold;">R$ 100,00</td>
   </tr>
     <tr>
-    <td style="vertical-align: top;">&#8226;</td>
+    <td style="vertical-align: top;"></td>
     <td style="color: black; text-align: right; width:150px;">Cotização Aplicação</td>
     <td style="padding: 0 8px;">:</td>
     <td style="color: black; font-weight: bold;">D+1</td>
   </tr>
   <tr>
-    <td style="vertical-align: top;">&#8226;</td>
+    <td style="vertical-align: top;"></td>
     <td style="color: black; text-align: right; width:150px;">Cotização Resgate</td>
     <td style="padding: 0 8px;">:</td>
     <td style="color: black; font-weight: bold;">D+35</td>
   </tr>
    <tr>
-    <td style="vertical-align: top;">&#8226;</td>
+    <td style="vertical-align: top;"></td>
     <td style="color: black; text-align: right; width:150px;">Liquidação Resgate</td>
     <td style="padding: 0 8px;">:</td>
     <td style="color: black; font-weight: bold;">D+37</td>
   </tr>
     <tr>
-    <td style="vertical-align: top;">&#8226;</td>
+    <td style="vertical-align: top;"></td>
     <td style="color: black; text-align: right; width:150px;">Público Alvo</td>
     <td style="padding: 0 8px;">:</td>
     <td style="color: black; font-weight: bold;">Público Geral</td>
@@ -241,7 +242,9 @@ readxl::read_excel("reta_aloc_files/cota-aloc.xlsx") |>
     color = "Legenda"
   ) +
   ggplot2::scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
-  ggplot2::theme_minimal()
+  ggplot2::theme_minimal() +
+  ggplot2::theme(legend.position = "bottom")
+
 
 ```
 
@@ -261,7 +264,8 @@ readxl::read_excel("reta_aloc_files/cota-aloc.xlsx") |>
                      sec.axis = ggplot2::sec_axis(~., name = "VaR & CVaR Mensal (%)", labels = scales::percent_format(scale = 1))) +
   ggplot2::scale_color_manual(values = c("Volatilidade" = "blue", "VaR (95%)" = "red", "CVaR (99%)" = "purple")) +
   ggplot2::labs(x = NULL, y = NULL, title = "Risco", color = "Legenda") +
-  ggplot2::theme_minimal()
+  ggplot2::theme_minimal() +
+  ggplot2::theme(legend.position = "bottom")
 ```
 
 
@@ -294,13 +298,26 @@ knitr::kable(
                              "Fundo",
                              "CDI",
                              "% CDI",
-                             "Inicial",
+                             "(%) CDI Inicial",
                              "PL"),
   escape = FALSE) |> 
   kableExtra::kable_styling(font_size = 90)
 ```
 
-# Disclaimer
+# Contatos
 
-Rentabilidade passada não representa garantia de resultados futuros.
+<div style="display: flex; flex-direction: column; align-items: center; gap: 5px;">
+  <a href="mailto:atendimento@retaasset.com" style="display: flex; align-items: center; gap: 5px;">
+    <i class="fas fa-envelope"></i> atendimento@retaasset.com
+  </a>
+  <a href="https://retaasset.com" style="display: flex; align-items: center; gap: 5px;">
+    <i class="fas fa-globe"></i> retaasset.com
+  </a>
+</div>
+
+
+
+<p style="font-size:50px;">*Rentabilidade passada não representa garantia de resultados futuros.</p>
+
+
 
